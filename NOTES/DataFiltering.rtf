@@ -1,0 +1,35 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat5\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+Data Filtering Process:\
+\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 {\listtext	1.	}Selected all matches pre-2010 WC into post2010 worksheet\
+{\listtext	2.	}Created new Workbook with 6 confederation sheets \'97> listed all teams remaining in Qualification and any groups they are in, make combined sheet with all teams\
+{\listtext	3.	}In post2010, Vlookup the conference for the home and away side and give 0 value if not in the list of all remaining teams\
+{\listtext	4.	}Create check column to see if there are matches where both teams played are not actually relevant to the remaining teams data -> 1 if both 0, 0 if at least 1 team remaining -> Filter to get only 0 values\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\cf0 		Now we have a set of matches Post2010 WC that contain a team or both teams still in the qualification process.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	5.	}Create a SameConfed Dummy to check if the match occurs with both teams in the same confederation\
+{\listtext	6.	}Separate matches by Confederation into separate workbooks using RemainingMatches. For example, in the ACF workbook, there are 3 sheets. Sheet 1 (AllMatches) contains a copy of RemainingMatches. Sheet 2 (Home) contains all games where the home team is an ACF team. Sheet 3 (Away) contains all games where the away team is an ACF. THERE MAY BE THE SAME MATCH COPIED ACROSS IF BOTH TEAMS ARE ACF but we only want exploratory analysis for home and away stats per team.\
+	\
+=IFS(E2=F2,"D",E2>F2,"HW",E2<F2,"AW")\
+=IFS(M2=N2,"D",M2>N2,"HW",M2<N2,"AW")\
+\
+CAF\
+=IFS(D2=E2,"D",D2>E2,"HW",D2<E2,"AW")\
+=IFS(N2=O2,"D",N2>O2,"HW",N2<O2,"AW")\
+}

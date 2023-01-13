@@ -1,0 +1,45 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+Data Modelling Process:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+METHOD:\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 {\listtext	1.	}Get list of unique teams in Home / Away datasets (should be remaining teams)\
+{\listtext	2.	}Create variables for home scored and conceded pre & post 2018 WC \'97> weight by giving old data 1/3 value and new data 2/3 value\
+{\listtext	3.	}Do the same for away variables\
+{\listtext	4.	}Sort both of the tables and collate into Teams sheet\
+{\listtext	5.	}Work out average goals scored and conceded home / away for entire confederation\
+{\listtext	6.	}From AllMatches \'97> get only matches where remainingteam has played remainingteam. Copy the date, home_team, away_team, home_score, away_score into new sheet.\
+{\listtext	7.	}Grab the year of match from the date column into Year column\
+{\listtext	8.	}Rankings (each country in world given average ranking per each year). In the newest matches subset sheet created, create H_rank and A_rank columns. Grab the corresponding ranking for the Home Team and Away Team from the year corresponding to the match date.\
+{\listtext	9.	}Create a rank_diff column to find difference of teams playing each other.\
+{\listtext	10.	}Engineer rank_value by multiplying rank_diff*0.005 (arbitrary value)\
+{\listtext	11.	}VLOOKUP Home_GF, Home_GA, Away_GF, Away_GA from the Teams data (weighted columns).\
+{\listtext	12.	}To Home_GF and Away_GA, subtract the rank_value. To Home_GA and Away_GF, add the rank_value.\
+{\listtext	13.	}Get their results for the 2022 WCQ. Create new Form_GF, Form_GA columns that are averages of how many goals scored and conceded for each team.\
+{\listtext	14.	}Engineer new Home_GF\'85 values. Take 2/3*oldHome_GF + 1/3*Form_GF etc.\
+{\listtext	15.	}Create H_attack, H_defence, A_attack, A_defence columns. Measure strength of team relative to confederation by dividing by confederation averages.\
+{\listtext	16.	}Input this data into Python. Create two models in DNN based on Home_score ~ H_attack + A_defence, Away_score ~ H_defence + A_attack.\
+{\listtext	17.	}Create similar values for the upcoming games. Input into python. Predict the home_xG and away_xG for the upcoming fixtures based on H_attack etc values.\
+{\listtext	18.	}Put these values into a PoissonDistribution to find the most common score outcome.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+Adjusting DNN:\
+- 0.01 is best learning rate\
+- Adding Rank improves model\
+- Adding Changing confederation averages improves model\
+\
+dnn1 = original prediction (0.001) learning rate\
+dnn2 = 0.03 learning rate\
+dnn3 = 0.025 learning rate\
+\
+}

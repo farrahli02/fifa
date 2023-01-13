@@ -1,0 +1,81 @@
+Date,Home,Away,Poisson_H_xG,Poisson_A_xG,Results,H_Points,A_Points
+06/10/2021,Ethiopia,South Africa,0,1,A_WIN,0,3
+06/10/2021,Morocco,Guinea-Bissau,1,0,H_WIN,3,0
+06/10/2021,Egypt,Libya,1,0,H_WIN,3,0
+06/10/2021,Cameroon,Mozambique,2,0,H_WIN,3,0
+06/10/2021,Algeria,Niger,2,0,H_WIN,3,0
+06/10/2021,Ghana,Zimbabwe,1,0,H_WIN,3,0
+06/10/2021,Malawi,Ivory Coast,0,1,A_WIN,0,3
+06/10/2021,Mali,Kenya,1,0,H_WIN,3,0
+06/10/2021,Liberia,Cape Verde,1,0,H_WIN,3,0
+06/10/2021,Senegal,Namibia,0,0,DRAW,1,1
+06/10/2021,DR Congo,Madagascar,1,1,DRAW,1,1
+06/10/2021,Sudan,Guinea,1,1,DRAW,1,1
+06/10/2021,Togo,Congo,1,1,DRAW,1,1
+06/10/2021,Tunisia,Mauritania,2,0,H_WIN,3,0
+06/10/2021,Angola,Gabon,1,0,H_WIN,3,0
+06/10/2021,Tanzania,Benin,2,1,H_WIN,3,0
+06/10/2021,Equatorial Guinea,Zambia,0,1,A_WIN,0,3
+06/10/2021,Rwanda,Uganda,2,0,H_WIN,3,0
+06/10/2021,Nigeria,Central African Republic,4,0,H_WIN,3,0
+06/10/2021,Djibouti,Burkina Faso,0,1,A_WIN,0,3
+10/10/2021,South Africa,Ethiopia,1,0,H_WIN,3,0
+10/10/2021,Gabon,Angola,1,0,H_WIN,3,0
+10/10/2021,Cape Verde,Liberia,2,0,H_WIN,3,0
+10/10/2021,Central African Republic,Nigeria,1,1,DRAW,1,1
+10/10/2021,Libya,Egypt,0,1,A_WIN,0,3
+10/10/2021,Guinea,Sudan,1,0,H_WIN,3,0
+10/10/2021,Burkina Faso,Djibouti,4,0,H_WIN,3,0
+10/10/2021,Ivory Coast,Malawi,1,0,H_WIN,3,0
+10/10/2021,Madagascar,DR Congo,1,1,DRAW,1,1
+10/10/2021,Uganda,Rwanda,2,1,H_WIN,3,0
+10/10/2021,Zambia,Equatorial Guinea,2,0,H_WIN,3,0
+10/10/2021,Kenya,Mali,1,1,DRAW,1,1
+10/10/2021,Benin,Tanzania,0,1,A_WIN,0,3
+10/10/2021,Zimbabwe,Ghana,0,1,A_WIN,0,3
+10/10/2021,Congo,Togo,2,1,H_WIN,3,0
+10/10/2021,Mozambique,Cameroon,2,0,H_WIN,3,0
+10/10/2021,Mauritania,Tunisia,0,2,A_WIN,0,3
+10/10/2021,Niger,Algeria,0,1,A_WIN,0,3
+10/10/2021,Guinea-Bissau,Morocco,0,2,A_WIN,0,3
+10/10/2021,Namibia,Senegal,0,1,A_WIN,0,3
+11/11/2021,Gabon,Libya,1,1,DRAW,1,1
+11/11/2021,Rwanda,Mali,0,1,A_WIN,0,3
+11/11/2021,Malawi,Cameroon,0,0,DRAW,1,1
+11/11/2021,Togo,Senegal,0,2,A_WIN,0,3
+11/11/2021,Sudan,Morocco,0,1,A_WIN,0,3
+11/11/2021,Congo,Namibia,1,0,H_WIN,3,0
+11/11/2021,South Africa,Zimbabwe,1,0,H_WIN,3,0
+11/11/2021,Tanzania,DR Congo,1,1,DRAW,1,1
+11/11/2021,Liberia,Nigeria,1,1,DRAW,1,1
+11/11/2021,Equatorial Guinea,Tunisia,0,1,A_WIN,0,3
+11/11/2021,Burkina Faso,Niger,3,0,H_WIN,3,0
+11/11/2021,Zambia,Mauritania,1,0,H_WIN,3,0
+11/11/2021,Ivory Coast,Mozambique,1,0,H_WIN,3,0
+11/11/2021,Djibouti,Algeria,0,2,A_WIN,0,3
+11/11/2021,Uganda,Kenya,1,0,H_WIN,3,0
+11/11/2021,Cape Verde,Central African Republic,3,0,H_WIN,3,0
+11/11/2021,Angola,Egypt,0,1,A_WIN,0,3
+11/11/2021,Guinea,Guinea-Bissau,1,0,H_WIN,3,0
+11/11/2021,Benin,Madagascar,1,1,DRAW,1,1
+11/11/2021,Ethiopia,Ghana,0,1,A_WIN,0,3
+14/11/2021,Cameroon,Ivory Coast,1,1,DRAW,1,1
+14/11/2021,Tunisia,Zambia,1,1,DRAW,1,1
+14/11/2021,Namibia,Togo,1,0,H_WIN,3,0
+14/11/2021,Libya,Angola,1,1,DRAW,1,1
+14/11/2021,Algeria,Burkina Faso,0,1,A_WIN,0,3
+14/11/2021,Niger,Djibouti,3,1,H_WIN,3,0
+14/11/2021,Morocco,Guinea,1,0,H_WIN,3,0
+14/11/2021,Kenya,Rwanda,1,0,H_WIN,3,0
+14/11/2021,Ghana,South Africa,1,0,H_WIN,3,0
+14/11/2021,Senegal,Congo,2,0,H_WIN,3,0
+14/11/2021,Nigeria,Cape Verde,0,0,DRAW,1,1
+14/11/2021,Liberia,Central African Republic,2,1,H_WIN,3,0
+14/11/2021,Zimbabwe,Ethiopia,2,1,H_WIN,3,0
+14/11/2021,Mozambique,Malawi,1,0,H_WIN,3,0
+14/11/2021,DR Congo,Benin,1,1,DRAW,1,1
+14/11/2021,Mauritania,Equatorial Guinea,2,0,H_WIN,3,0
+14/11/2021,Mali,Uganda,1,1,DRAW,1,1
+14/11/2021,Madagascar,Tanzania,1,0,H_WIN,3,0
+14/11/2021,Guinea-Bissau,Sudan,1,1,DRAW,1,1
+14/11/2021,Egypt,Gabon,0,0,DRAW,1,1

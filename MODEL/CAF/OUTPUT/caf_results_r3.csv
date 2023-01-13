@@ -1,0 +1,11 @@
+Home,Away,Poisson_H_xG,Poisson_A_xG,Results,H_Points,A_Points
+Tanzania,Nigeria,0,0,DRAW,1,1
+Senegal,Morocco,1,0,H_WIN,3,0
+Burkina Faso,Tunisia,2,0,H_WIN,3,0
+Ghana,Mali,1,0,H_WIN,3,0
+Egypt,Ivory Coast,0,0,DRAW,1,1
+Nigeria,Tanzania,3,1,H_WIN,3,0
+Morocco,Senegal,0,1,A_WIN,0,3
+Tunisia,Burkina Faso,0,0,DRAW,1,1
+Mali,Ghana,0,0,DRAW,1,1
+Ivory Coast,Egypt,0,1,A_WIN,0,3
